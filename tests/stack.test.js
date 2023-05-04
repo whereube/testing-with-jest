@@ -4,6 +4,13 @@ test('peek on empty stack returns undefined', () => {
     expect(stack.peek()).toBeUndefined();
 });
 
+test('Testar felaktigt värde', () => {
+    stack.push(10);
+    stack.push(5);
+    expect(stack.pop()).toBeDefined();
+    expect(stack.pop()).toBeGreaterThan(27);
+});
+
 test('peek on stack with one element returns that element', () => {
     stack.push(1);
     expect(stack.peek()).toBeDefined();
