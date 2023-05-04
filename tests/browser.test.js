@@ -32,3 +32,8 @@ describe('Clicking "Pusha till stacken"', () => {
 		await alert.accept();
 	});
 });
+
+test('The stack should be empty in the beginning', async () => {
+	let stack = await driver.findElement(By.name('peek')).getText();
+	expect(stack).toEqual("Vad finns överst på stacken?");
+});
