@@ -20,7 +20,7 @@ afterAll(async() => {
 
 test('The stack should be empty in the beginning', async () => {
 	let stack = await driver.findElement(By.id('top_of_stack')).getText();
-	expect(stack).toEqual("n/a");
+	expect(stack).toEqual("Huvudet");
 });
 
 describe('Clicking "Pusha till stacken"', () => {
@@ -35,5 +35,5 @@ describe('Clicking "Pusha till stacken"', () => {
 
 test('The stack should be empty in the beginning', async () => {
 	let stack = await driver.findElement(By.name('peek')).getText();
-	expect(stack).toEqual("Vad finns överst på stacken?");
+	expect(stack).toEqual("Vad finns överst på nacken?");
 });
