@@ -5,7 +5,7 @@ test('peek on empty stack returns undefined', () => {
 });
 
 test('Testar felaktigt värde', () => {
-    stack.push(10);
+    stack.push(30);
     stack.push(5);
     expect(stack.pop()).toBeDefined();
     expect(stack.pop()).toBeGreaterThan(27);
